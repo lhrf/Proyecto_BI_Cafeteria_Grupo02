@@ -1,0 +1,145 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e8c06334-c252-4528-9c97-39679b842e24" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Cubo Cafeteria</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Fact Delivery</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ed92bcfa-0f73-45fe-933b-20242a9bbe31">
+          <ID>Fact Delivery</ID>
+          <Name>Fact Delivery</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="270e8b9d-8bbb-4622-9c9c-19957b8a33dd">
+            <DataSourceViewID>DSV Cafeteria</DataSourceViewID>
+            <TableID>dbo_FactDelivery</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Pago</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="96553fee-4561-460a-9106-86ec4d3ba56e">
+          <ID>Fact Pago</ID>
+          <Name>Fact Pago</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="27df5394-76e4-45ff-997f-8780422e1fd7">
+            <DataSourceViewID>DSV Cafeteria</DataSourceViewID>
+            <TableID>dbo_FactPago</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Recepcion Producto</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="cdb15dc0-e531-4d29-afd0-fa127b7e5067">
+          <ID>Fact Recepcion Producto</ID>
+          <Name>Fact Recepcion Producto</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c3966299-2c3d-4da0-a7a4-ae7bd706a82d">
+            <DataSourceViewID>DSV Cafeteria</DataSourceViewID>
+            <TableID>dbo_FactRecepcionProducto</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Venta</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="20db42c1-9ad6-4e78-a6ab-14ef9907fd3b">
+          <ID>Fact Venta</ID>
+          <Name>Fact Venta</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="229fa377-1b92-40b1-a638-7124adc973e2">
+            <DataSourceViewID>DSV Cafeteria</DataSourceViewID>
+            <TableID>dbo_FactVenta</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Venta 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0f65127c-09c4-476d-8e2c-11b0c9b07c58">
+          <ID>Fact Venta</ID>
+          <Name>Fact Venta</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cae9b2cd-a29b-4f02-9cbc-9a97375b803b">
+            <DataSourceViewID>DSV Cafeteria</DataSourceViewID>
+            <TableID>dbo_FactVenta</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Recepcion Producto 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6172da43-c3d1-40b3-a666-ec3042b65096">
+          <ID>Fact Recepcion Producto</ID>
+          <Name>Fact Recepcion Producto</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a8969bce-733d-42fd-ba86-9739e91f9826">
+            <DataSourceViewID>DSV Cafeteria</DataSourceViewID>
+            <TableID>dbo_FactRecepcionProducto</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Pago 1</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3ffa0a76-263c-45d9-801a-ed3d3a549019">
+          <ID>Fact Pago</ID>
+          <Name>Fact Pago</Name>
+          <CreatedTimestamp>0001-01-01T05:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T05:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T05:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="088b07dd-8242-43e3-baaf-f4a95a7f9fce">
+            <DataSourceViewID>DSV Cafeteria</DataSourceViewID>
+            <TableID>dbo_FactPago</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
